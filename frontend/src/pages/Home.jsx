@@ -13,7 +13,7 @@ const Home = () => {
   {
     setLoading(true);
     axios
-    .get('http://localhost:3005/books')
+    .get('https://book-store-ei1l.onrender.com/books')
     .then((response)=>
     {
       setBooks(response.data.data);
