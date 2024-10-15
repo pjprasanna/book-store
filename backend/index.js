@@ -13,7 +13,7 @@ app.get('/',(request,response)=>{
 console.log(request)
 return response.status(234).send(`<h1>Welcome to MERN stack</h1>`);
 })
-app.listen(port,()=>{
+app.listen(process.env.PORT ||port,()=>{
 console.log('App is connected')
 })
 app.use('/books',bookRoutes);
